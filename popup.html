@@ -1,0 +1,84 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html" style="min-width:203px;">
+
+<head>
+  <title>Skipper</title>
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="add.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ps.css">
+</head>
+
+<h3 align="middle" id="headline">Skip to Actual Video</h3>
+<span id="tspace" title="Video Name"></span>
+<hr>
+
+<div class="sets">
+  <span id="starttext">Start at </span><span class="inputWithIcon">
+  <input type="text" placeholder="0:00" id="start" maxlength="7" autofocus>
+  <i class="fa fa-clock-o fa-lg fa-fw" aria-hidden="true" id="icon1"></i>
+</span>
+  <div id="extra"></div>
+  <span id="endtext">Stop at  </span><span class="inputWithIcon">
+  <input type="text" placeholder="" id="end" maxlength="7">
+  <i class="fa fa-clock-o fa-lg fa-fw" aria-hidden="true" id="icon2"></i>
+</span>
+<div id="advs2" class="advs" style="display: none;">
+  <input type="checkbox" name="cb2" id="cb2" class="cbs"><label id="cstartl" for="cb2" class="lbs"><span title="start time will be set for this entire channel">Apply start(<b id="startc">0:00</b>) to channel</span></label>
+</div>
+  <div id="advs4" class="advs" style="display: none;">
+    <input type="checkbox" name="cb4" id="cb4" class="cbs"><label id="cendl" for="cb4" class="lbs"><span title="End skip will be set for this entire channel">Apply end(<b id="endc">-0:00</b>) to channel</span></label>
+    <br/>
+  </div>
+  <br/>
+  <a class="button" href="#" id="addMid" role="button">
+  <span>Internal Skip</span>
+  <div class="icon" id="i222">
+    <i class="fa fa-plus"></i>
+    <i class="fa fa-check"></i>
+  </div>
+</a>
+  <a class="button" href="#" id="setButton" role="button">
+  	<span>Save</span>
+  	<div class="icon" id="111">
+  		<i class="fa fa-floppy-o"></i>
+  		<i class="fa fa-check"></i>
+  	</div>
+  </a>
+
+  <hr id="sethr">
+  <div class="ondisplay" title="Turn Skipper on/off">
+    <section title="Turn Skipper on/off">
+      <div class="slideThree" title="Turn Skipper on/off">
+        <input type="checkbox" title="Turn Skipper on/off" value="None" id="slideThree" name="check" checked />
+        <label for="slideThree" title="Turn Skipper on/off"></label>
+      </div>
+
+
+    </section>
+  </div>
+  <hr> Skipped a total of <b><span id="counter" style="color:green">0</span></b> Seconds
+  <hr>
+  <div id="expand2" style="display: none;">
+    <div id="adv1" class="advs">
+      <input type="checkbox" name="cb" id="cb1" class="cbs"><label id="advl" for="cb1" class="lbs">Show Advanced Options<sup><small>(beta)</small></sup></label>
+    </div>
+    <div id="advs3" class="advs" style="display: none;">
+      <input type="checkbox" name="cb3" id="cb3" class="cbs"><label id="adv3" for="cb3" class="lbs"><span title="local time saves will take longer to take effect"> - url change disabled -</span></label>
+    </div>
+    <hr>
+    <b>Please share &#10084;</b><br/>
+    <a id="email" href="mailto:?Subject=This%20extension%20already%20saved%20me%20444%20seconds!&amp;Body=Skipper%20-%20Music%20Mode%20For%20YouTube%20%20skips%20to%20the%20actual%20song/video%20for%20you%20%20%20https://chrome.google.com/webstore/detail/skipper-music-mode-for-yo/chojffponkoboggmjpnkflkbcelacijk"
+      target="_blank"><img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
+    <a id="fb" href="https://www.facebook.com/sharer/sharer.php?u=bit.ly/skippershare&quote=This%20extension%20already%20saved%20me%20444%20seconds!" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+    <a href="https://plus.google.com/share?url=https://bit.ly/skippershare" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://bit.ly/skippershare" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+    <a href="http://www.tumblr.com/share/link?url=https://bit.ly/skippershare&amp;title=This%20extension%20already%20saved%20me%20444%20seconds!" target="_blank">  <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr"/></a>
+    <a id="tw" href="https://twitter.com/intent/tweet?text=This%20extension%20already%20saved%20me%20444%20seconds!%20http://bit.ly/skippershare" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter"/></a>
+    <br/><a href=http://bit.ly/5starskipper target="_blank" style="display: none;" id="rate">Or rate 5 stars &#10084;</a>
+    <hr> Talk to me about anything at<br/>hypermusictv@gmail.com =)
+  </div>
+  <p id="more" title="Expand"><i class="down"></i></p>
+
+</html>
